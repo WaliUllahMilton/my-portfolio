@@ -1,11 +1,5 @@
-
-// import { Link } from "react-router-dom"
-
-// import { useEffect } from "react"
 import { Link,useLocation } from "react-router-dom"
-
 import { useState } from "react"
-// import Nav from "../../components/Navbar"
 import { TiThMenuOutline } from "react-icons/ti";
 
 
@@ -45,7 +39,7 @@ const Navbar = () => {
     <>
         <nav className="max-w-screen-lg mx-auto mt-4">
         <header className="relative flex flex-col sm:flex-row items-center justify-between">
-            <div className="">
+            <div className="flex sm:flex-none justify-between w-full sm:w-auto sm:px-0 px-4">
                 <Link
                 className="font-jet flex text-2xl text-white font-extrabold"
                 >Milton 
@@ -68,7 +62,6 @@ const Navbar = () => {
                 <Link 
                 className={`leading-6  hover:text-[#01FE99] transition-all ease-in-out duration-100 font-jet text-base font-base active:text-red
                     ${location.pathname === item.href ? "border-b-2 border-[#01FE99] text-[#01FE99] " : "text-white" }`}
-                // activeClassName="text-red-500 font-bold" 
                 to={item.href} key={index}>{item.data}</Link>
             ))
             }
