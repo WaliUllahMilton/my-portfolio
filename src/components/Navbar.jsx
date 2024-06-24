@@ -54,7 +54,7 @@ const Navbar = () => {
                   <TiThMenuOutline/>
                 </button>
             </div>
-            <div className= {`transition-all h-full duration-500 ease-in-out 
+            <div className= {`transition-all h-full duration-500 ease-in-out  bg-black w-full sm:w-auto
             flex flex-col gap-4  sm:flex-row items-center
             ${toggleValue ? "absolute  -top-[300px] pointer-events-none" : "absolute top-10 sm:top-0 sm:right-0 pointer-events-auto"}  `}
             >

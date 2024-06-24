@@ -1,7 +1,8 @@
 import { FiDownloadCloud,  } from "react-icons/fi";
 import { FaGithub,FaLinkedinIn,FaInstagram,FaFacebook, } from "react-icons/fa6";
-import Logo from "./../../assets/fotor-20240624224249.png"
+// import Logo from "./../../assets/fotor-20240624224249.png"
 import {Link} from "react-router-dom"
+import Photo from "../../components/photo/Photo";
 
 
 const Home = () => {
@@ -50,10 +51,9 @@ const Home = () => {
         </div>
        </div>
        <div> 
-        <picture className="w-[30vw]">
-          <img src={Logo} alt="logo.png" 
-          className="object-cover w-[300px] bg-cover" />
-        </picture>
+        <div>
+          <Photo/>
+        </div>
        </div>
     </div>  
   )
