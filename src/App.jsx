@@ -1,4 +1,6 @@
-import Home from "./pages/Home"
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/homePage/Home"
+
 
 
 
@@ -8,7 +10,10 @@ function App() {
 
   return (
     <>
-      <Home/>
+    <Routes>
+      <Route path="/" element= {<Home/>}/>
+    </Routes>
+      
     </>
   )
 }
