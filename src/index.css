@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background: linear-gradient(to left, rgb(29, 28, 34), rgb(30, 35, 35));
+}
+.active-link {
+    color: red; /* Example of active link color */
+    /* Add any other styles you want for active links */
+}
