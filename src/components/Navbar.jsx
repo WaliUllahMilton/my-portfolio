@@ -43,7 +43,7 @@ const Navbar = () => {
     // })
   return (
     <>
-        <nav className="">
+        <nav className="max-w-screen-lg mx-auto mt-4">
         <header className="relative flex flex-col sm:flex-row items-center justify-between">
             <div className="">
                 <Link
