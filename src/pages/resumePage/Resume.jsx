@@ -8,6 +8,8 @@ import { RiTailwindCssLine } from "react-icons/ri";
 import { SiExpress,SiMongodb  } from "react-icons/si";
 import Image from "../../assets/WhatsApp Image 2024-06-28 at 21.15.10_d6e907db.jpg"
 
+// import AgencImage from "../../assets/"
+
 const Resume = () => {
   const [select,setSelect]=useState(1)
   const [skillHover,setSkillHover]=useState(null)
@@ -83,7 +85,8 @@ const Resume = () => {
     img:{
       name:"Wali Ullah Milton",
       src:Image
-    }
+    },
+    
   }
   console.log(select)
   return (
