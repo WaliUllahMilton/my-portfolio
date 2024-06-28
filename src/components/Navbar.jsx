@@ -38,8 +38,8 @@ const Navbar = () => {
     <>
         {/* <StairTransition/> */}
         <nav className="max-w-screen-lg mx-auto mt-4">
-        <header className=" flex flex-col sm:flex-row items-center justify-between">
-            <div className="flex sm:flex-none justify-between w-full sm:w-auto sm:px-0 px-4">
+        <header className="relative  flex flex-col md:flex-row items-center justify-between">
+            <div className="flex md:flex-none justify-between w-full md:w-auto md:px-0 px-4">
                 <Link
                 className="font-jet flex text-2xl text-white font-extrabold"
                 to="/"
@@ -48,15 +48,15 @@ const Navbar = () => {
                   .
                 </span></Link>
                 <button
-                className="text-white text-lg sm:hidden "
+                className="text-white text-lg md:hidden "
                  onClick={handleTogglebtn}
                 >
                   <TiThMenuOutline/>
                 </button>
             </div>
-            <div className= {`transition-all h-full duration-500 ease-in-out z-[999]  w-full sm:w-auto
-            flex flex-col gap-4  sm:flex-row items-center md:bg-transparent
-            ${toggleValue ? "relative -top-[300px] pointer-events-none bg-black h-full" : "relative bg-black top-0 pt-4 pb-10 sm:top-0 sm:right-0 pointer-events-auto"}  `}
+            <div className= {`transition-all h-[92vh] md:h-auto duration-500 ease-in-out z-[999]  w-[100vw] md:w-auto
+            flex flex-col gap-4 absolute md:flex-row items-center md:bg-transparent bg-black
+            ${toggleValue ? " -top-[110vh] pointer-events-none  h-full" : " top-10 pt-4 pb-10 md:top-0 md:right-0 pointer-events-auto"}  `}
             >
             {
                 navData.map((item,index)=>(

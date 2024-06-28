@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 body {
-    background: linear-gradient(to left, rgb(29, 28, 34), rgb(30, 35, 35));
+    /* background: linear-gradient(to left, rgb(29, 28, 34), rgb(30, 35, 35)); */
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity)) 
 }
 .active-link {
     color: red; /* Example of active link color */
     /* Add any other styles you want for active links */
 }
+.text-outline {
+    /* -webkit-text-stroke: 1px; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #01FE99;
+  }
+ 

@@ -12,7 +12,14 @@ const Home = () => {
     <div className="max-w-screen-lg font-jet px-4 md:px-0 py-4 md:py-[13vh] mx-auto flex flex-col
     fixed top-10 md:top-0 md:static 
     text-center md:text-left md:flex-row justify-between items-center text-white">
-       <div className="md:w-[60vw] w-full order-1 md:order-1 md:mx-0">
+       <div className="   md:order-1 ">
+        <div className="w-full">
+          <Photo/>
+        </div>
+      </div>
+       <div> 
+       
+       <div className="md:w-[50vw] w-full md:order-2 md:mx-0">
         <p className="text-base w-auto md:text-lg font-bold">Frontend Web Developer</p>
         <h1 className="text-[4vw] font-bold  md:leading-[12vh]">
           Hello I'm
@@ -52,10 +59,6 @@ const Home = () => {
           </div>
         </div>
        </div>
-       <div> 
-        <div className="order-2 md:order-2">
-          <Photo/>
-        </div>
        </div>
     </div>  
   )
